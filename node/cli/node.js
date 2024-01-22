@@ -20,11 +20,11 @@ class QtumNode {
     let services = await this.setupServices()
     this.#node = new Node({
       ...this.#config,
-      path: path.resolve(this.#path, 'qtuminfo-node.json'),
+      path: path.resolve(this.#path, 'borshinfo-node.json'),
       services
     })
     this.registerExitHandlers()
-    this.#node.on('ready', () => this.logger.info('Qtuminfo Node ready.'))
+    this.#node.on('ready', () => this.logger.info('Borshinfo Node ready.'))
     this.#node.on('error', err => this.logger.error(err))
     this.#node.start().catch(err => {
       this.logger.error('Failed to start services')
