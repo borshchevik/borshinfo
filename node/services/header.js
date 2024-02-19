@@ -7,7 +7,7 @@ const {AsyncQueue} = require('../utils')
 const {gt: $gt, between: $between} = Sequelize.Op
 
 const MAX_CHAINWORK = 1n << 256n
-const STARTING_CHAINWORK = 0x0000000000000000000000000000000000000000000000000000000000010001
+const STARTING_CHAINWORK = 0x10001n
 
 class HeaderService extends Service {
   #p2p = null

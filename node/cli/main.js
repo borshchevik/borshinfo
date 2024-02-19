@@ -2,7 +2,7 @@ const path = require('path')
 const Liftoff = require('liftoff')
 const program = require('commander')
 const packageJson = require('../../package.json')
-const QtumNode = require('./node')
+const BorshNode = require('./node')
 
 process.on('unhandledRejection', reason => console.error(reason))
 
@@ -37,7 +37,7 @@ liftoff.launch({cwd: process.cwd}, () => {
         ...cmd.config ? [cmd.config] : [],
         'borshinfo-node.json'
       ))
-      let node = new QtumNode({path: process.cwd(), config})
+      let node = new BorshNode({path: process.cwd(), config})
       await node.start()
     })
 

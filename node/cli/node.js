@@ -1,7 +1,7 @@
 const path = require('path')
 const Node = require('../node')
 
-class QtumNode {
+class BorshNode {
   #path = null
   #config = null
   #node = null
@@ -68,4 +68,4 @@ class QtumNode {
   }
 }
 
-module.exports = QtumNode
+module.exports = BorshNode
