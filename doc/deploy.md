@@ -50,7 +50,7 @@ This repo is optional, you may not deploy it if you don't need UI.
 1. `git clone https://github.com/borshchevik/borshinfo-ui.git`
 2. `cd borshinfo-ui && npm install`
 3. Edit `package.json` for example:
-   * Edit `script.build` to `"build": "borshINFO_API_BASE_CLIENT=/api/ borshINFO_API_BASE_SERVER=http://localhost:3001/ borshINFO_API_BASE_WS=//example.com/ nuxt build"` in `package.json` to set the api URL base
+   * Edit `script.build` to `"build": "BORSHINFO_API_BASE_CLIENT=/api/ BORSHINFO_API_BASE_SERVER=http://localhost:3001/ BORSHINFO_API_BASE_WS=//example.com/ nuxt build"` in `package.json` to set the api URL base
    * Edit `script.start` to `"start": "PORT=3000 nuxt start"` to run `borshinfo-ui` on port 3000
 4. `npm run build`
 5. `npm start`
