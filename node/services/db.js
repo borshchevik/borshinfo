@@ -26,7 +26,11 @@ class DBService extends Service {
     this.#rpcOptions = Object.assign({
       protocol: 'http',
       host: 'localhost',
+<<<<<<< Updated upstream
       port: 4998,
+=======
+      port: 9849,
+>>>>>>> Stashed changes
       user: 'user',
       password: 'password'
     }, options.rpc)
