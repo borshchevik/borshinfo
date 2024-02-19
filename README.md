@@ -1,4 +1,4 @@
-# qtuminfo
+# borshinfo
 
 [API documentation](https://github.com/borshchevik/borshinfo-api/blob/master/README.md)
 

@@ -12,11 +12,11 @@
     "url": "git+https://github.com/borshchevik/borshinfo.git"
   },
   "keywords": [
-    "qtum",
-    "qtuminfo",
-    "qtum explorer"
+    "borsh",
+    "borshinfo",
+    "borsh explorer"
   ],
-  "author": "QTUM <foundation@qtum.org>",
+  "author": "BORSH <info@borshchevik.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/borshchevik/borshinfo/issues"
